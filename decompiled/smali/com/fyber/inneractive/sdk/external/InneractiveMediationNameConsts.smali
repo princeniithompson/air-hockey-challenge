@@ -1,0 +1,18 @@
+.class public Lcom/fyber/inneractive/sdk/external/InneractiveMediationNameConsts;
+.super Ljava/lang/Object;
+
+# fields
+.field public static final ADMOB:Ljava/lang/String; = "admob"
+.field public static final DFP:Ljava/lang/String; = "dfp"
+.field public static final FYBER:Ljava/lang/String; = "fyber"
+.field public static final IRONSOURCE:Ljava/lang/String; = "ironsource"
+.field public static final MAX:Ljava/lang/String; = "max"
+.field public static final OTHER:Ljava/lang/String; = "other"
+
+# methods
+.method public <init>()V
+    .registers 1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    return-void
+.end method
+

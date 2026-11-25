@@ -1,0 +1,28 @@
+.class public Lcom/fyber/inneractive/sdk/player/exoplayer2/l;
+.super Ljava/io/IOException;
+
+# methods
+.method public <init>()V
+    .registers 1
+    invoke-direct {v0}, Ljava/io/IOException;-><init>()V
+    return-void
+.end method
+
+.method public <init>(Ljava/lang/String;)V
+    .registers 2
+    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    return-void
+.end method
+
+.method public <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .registers 3
+    invoke-direct {v0, v1, v2}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    return-void
+.end method
+
+.method public <init>(Ljava/lang/Throwable;)V
+    .registers 2
+    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/Throwable;)V
+    return-void
+.end method
+

@@ -1,0 +1,194 @@
+.class public final Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;
+.super Ljava/lang/Object;
+
+# fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+.field public final a:I
+.field public final b:I
+.field public final c:I
+.field public final d:[B
+.field public e:I
+
+# methods
+.method public static <clinit>()V
+    .registers 1
+    new-instance v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b$a;
+    invoke-direct {v0}, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b$a;-><init>()V
+    sput-object v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->CREATOR:Landroid/os/Parcelable$Creator;
+    return-void
+.end method
+
+.method public <init>(III[B)V
+    .registers 5
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput v1, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->a:I
+    iput v2, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->b:I
+    iput v3, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->c:I
+    iput-object v4, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->d:[B
+    return-void
+.end method
+
+.method public <init>(Landroid/os/Parcel;)V
+    .registers 3
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {v2}, Landroid/os/Parcel;->readInt()I
+    move-result v0
+    iput v0, v1, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->a:I
+    invoke-virtual {v2}, Landroid/os/Parcel;->readInt()I
+    move-result v0
+    iput v0, v1, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->b:I
+    invoke-virtual {v2}, Landroid/os/Parcel;->readInt()I
+    move-result v0
+    iput v0, v1, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->c:I
+    invoke-virtual {v2}, Landroid/os/Parcel;->readInt()I
+    move-result v0
+    if-eqz v0, :cond_1d
+    const/4 v0, 0x1
+    goto :goto_1e
+
+    :cond_1d
+    const/4 v0, 0x0
+
+    :cond_1e
+    if-eqz v0, :cond_25
+    invoke-virtual {v2}, Landroid/os/Parcel;->createByteArray()[B
+    move-result-object v2
+    goto :goto_26
+
+    :cond_25
+    const/4 v2, 0x0
+
+    :cond_26
+    iput-object v2, v1, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->d:[B
+    return-void
+.end method
+
+.method public describeContents()I
+    .registers 2
+    const/4 v0, 0x0
+    return v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+    const/4 v0, 0x1
+    if-ne v4, v5, :cond_4
+    return v0
+
+    :cond_4
+    const/4 v1, 0x0
+    if-eqz v5, :cond_30
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v2
+    const-class v3, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;
+    if-eq v3, v2, :cond_10
+    goto :goto_30
+
+    :cond_10
+    check-cast v5, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;
+    iget v2, v4, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->a:I
+    iget v3, v5, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->a:I
+    if-ne v2, v3, :cond_30
+    iget v2, v4, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->b:I
+    iget v3, v5, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->b:I
+    if-ne v2, v3, :cond_30
+    iget v2, v4, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->c:I
+    iget v3, v5, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->c:I
+    if-ne v2, v3, :cond_30
+    iget-object v2, v4, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->d:[B
+    iget-object v5, v5, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->d:[B
+    invoke-static {v2, v5}, Ljava/util/Arrays;->equals([B[B)Z
+    move-result v5
+    if-nez v5, :cond_2f
+    goto :goto_30
+
+    :cond_2f
+    return v0
+
+    :cond_30
+    return v1
+.end method
+
+.method public hashCode()I
+    .registers 3
+    iget v0, v2, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->e:I
+    if-nez v0, :cond_1d
+    iget v0, v2, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->a:I
+    binop/lit-0xd0 v0, v0, 0x20f
+    binop/lit-0xda v0, v0, 0x1f00
+    iget v1, v2, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->b:I
+    binop/2addr-0xb0 v0, v1
+    binop/lit-0xda v0, v0, 0x1f00
+    iget v1, v2, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->c:I
+    binop/2addr-0xb0 v0, v1
+    binop/lit-0xda v0, v0, 0x1f00
+    iget-object v1, v2, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->d:[B
+    invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
+    move-result v1
+    binop/2addr-0xb0 v0, v1
+    iput v0, v2, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->e:I
+
+    :cond_1d
+    iget v0, v2, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->e:I
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 4
+    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v1, "ColorInfo("
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget v1, v3, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->a:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v1, ", "
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget v2, v3, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->b:I
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget v2, v3, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->c:I
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, v3, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->d:[B
+    if-eqz v1, :cond_2a
+    const/4 v1, 0x1
+    goto :goto_2b
+
+    :cond_2a
+    const/4 v1, 0x0
+
+    :cond_2b
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    const-string v1, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+    return-object v0
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .registers 3
+    iget v2, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->a:I
+    invoke-virtual {v1, v2}, Landroid/os/Parcel;->writeInt(I)V
+    iget v2, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->b:I
+    invoke-virtual {v1, v2}, Landroid/os/Parcel;->writeInt(I)V
+    iget v2, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->c:I
+    invoke-virtual {v1, v2}, Landroid/os/Parcel;->writeInt(I)V
+    iget-object v2, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->d:[B
+    if-eqz v2, :cond_15
+    const/4 v2, 0x1
+    goto :goto_16
+
+    :cond_15
+    const/4 v2, 0x0
+
+    :cond_16
+    invoke-virtual {v1, v2}, Landroid/os/Parcel;->writeInt(I)V
+    iget-object v2, v0, Lcom/fyber/inneractive/sdk/player/exoplayer2/video/b;->d:[B
+    if-eqz v2, :cond_20
+    invoke-virtual {v1, v2}, Landroid/os/Parcel;->writeByteArray([B)V
+
+    :cond_20
+    return-void
+.end method
+

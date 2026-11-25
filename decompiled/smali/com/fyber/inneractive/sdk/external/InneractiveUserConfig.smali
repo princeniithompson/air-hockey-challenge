@@ -1,0 +1,111 @@
+.class public Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;
+.super Ljava/lang/Object;
+
+# fields
+.field public a:I
+.field public b:Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig$Gender;
+.field public c:Ljava/lang/String;
+
+# methods
+.method public <init>()V
+    .registers 2
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0xffffffff
+    iput v0, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->a:I
+    const/4 v0, 0x0
+    iput-object v0, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->b:Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig$Gender;
+    iput-object v0, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->c:Ljava/lang/String;
+    return-void
+.end method
+
+.method public static ageIsValid(I)Z
+    .registers 3
+    const/4 v0, 0x1
+    if-lt v2, v0, :cond_8
+    const/16 v1, 0x78
+    if-gt v2, v1, :cond_8
+    goto :goto_9
+
+    :cond_8
+    const/4 v0, 0x0
+
+    :cond_9
+    return v0
+.end method
+
+.method public getAge()I
+    .registers 2
+    iget v0, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->a:I
+    return v0
+.end method
+
+.method public getGender()Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig$Gender;
+    .registers 2
+    iget-object v0, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->b:Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig$Gender;
+    return-object v0
+.end method
+
+.method public getZipCode()Ljava/lang/String;
+    .registers 2
+    iget-object v0, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->c:Ljava/lang/String;
+    return-object v0
+.end method
+
+.method public setAge(I)Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;
+    .registers 3
+    invoke-static {v2}, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->ageIsValid(I)Z
+    move-result v0
+    if-eqz v0, :cond_9
+    iput v2, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->a:I
+    goto :goto_11
+
+    :cond_9
+    const/4 v2, 0x0
+    new-array v2, v2, [Ljava/lang/Object;
+    const-string v0, "The Age is invalid. Please use a number between 1 and 120"
+    invoke-static {v0, v2}, Lcom/fyber/inneractive/sdk/util/IAlog;->e(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    :cond_11
+    return-object v1
+.end method
+
+.method public setGender(Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig$Gender;)Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;
+    .registers 3
+    if-eqz v2, :cond_5
+    iput-object v2, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->b:Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig$Gender;
+    goto :goto_d
+
+    :cond_5
+    const/4 v2, 0x0
+    new-array v2, v2, [Ljava/lang/Object;
+    const-string v0, "The gender is invalid. Please use one of the suggested InneractiveAdView.Gender"
+    invoke-static {v0, v2}, Lcom/fyber/inneractive/sdk/util/IAlog;->e(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    :cond_d
+    return-object v1
+.end method
+
+.method public setZipCode(Ljava/lang/String;)Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;
+    .registers 3
+    if-eqz v2, :cond_15
+    const-string v0, "(^\\d{5}$)|(^\\d{5}-\\d{4}$)"
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    move-result-object v0
+    invoke-virtual {v0, v2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    move-result-object v0
+    invoke-virtual {v0}, Ljava/util/regex/Matcher;->matches()Z
+    move-result v0
+    if-eqz v0, :cond_15
+    iput-object v2, v1, Lcom/fyber/inneractive/sdk/external/InneractiveUserConfig;->c:Ljava/lang/String;
+    goto :goto_1d
+
+    :cond_15
+    const/4 v2, 0x0
+    new-array v2, v2, [Ljava/lang/Object;
+    const-string v0, "The zipcode format is invalid. Please use a valid value."
+    invoke-static {v0, v2}, Lcom/fyber/inneractive/sdk/util/IAlog;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    :cond_1d
+    return-object v1
+.end method
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android" android:shape="0">
+  <corners android:radius="@dimen/ia_round_overlay_radius">
+  </corners>
+  <size
+    android:height="@dimen/ia_round_control_size"
+    android:width="@dimen/ia_round_control_size">
+  </size>
+  <solid android:color="@color/fyber_accent">
+  </solid>
+</shape>

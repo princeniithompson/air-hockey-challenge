@@ -1,0 +1,10 @@
+.class public abstract Lcom/android/billingclient/api/BillingClientStateListener;
+.super Ljava/lang/Object;
+
+# methods
+.method public abstract onBillingServiceDisconnected()V
+.end method
+
+.method public abstract onBillingSetupFinished(Lcom/android/billingclient/api/BillingResult;)V
+.end method
+

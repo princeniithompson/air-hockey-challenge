@@ -1,0 +1,64 @@
+.class public Lcom/fyber/inneractive/sdk/player/a;
+.super Ljava/lang/Object;
+
+# fields
+.field public a:Lcom/fyber/inneractive/sdk/flow/f0;
+.field public b:Lcom/fyber/inneractive/sdk/player/a$a;
+
+# methods
+.method public <init>(Lcom/fyber/inneractive/sdk/flow/f0;)V
+    .registers 2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object v1, v0, Lcom/fyber/inneractive/sdk/player/a;->a:Lcom/fyber/inneractive/sdk/flow/f0;
+    return-void
+.end method
+
+.method public a()Lcom/fyber/inneractive/sdk/player/a$a;
+    .registers 10
+    iget-object v0, v9, Lcom/fyber/inneractive/sdk/player/a;->b:Lcom/fyber/inneractive/sdk/player/a$a;
+    if-nez v0, :cond_47
+    new-instance v0, Lcom/fyber/inneractive/sdk/player/e;
+    sget-object v2, Lcom/fyber/inneractive/sdk/util/l;->a:Landroid/app/Application;
+    iget-object v6, v9, Lcom/fyber/inneractive/sdk/player/a;->a:Lcom/fyber/inneractive/sdk/flow/f0;
+    iget-object v1, v6, Lcom/fyber/inneractive/sdk/flow/q;->b:Lcom/fyber/inneractive/sdk/response/e;
+    move-object v3, v1
+    check-cast v3, Lcom/fyber/inneractive/sdk/response/g;
+    iget-object v4, v6, Lcom/fyber/inneractive/sdk/flow/q;->d:Lcom/fyber/inneractive/sdk/config/b0;
+    iget-object v5, v6, Lcom/fyber/inneractive/sdk/flow/q;->a:Lcom/fyber/inneractive/sdk/external/InneractiveAdRequest;
+    const/4 v1, 0x0
+    if-eqz v6, :cond_40
+    if-eqz v4, :cond_40
+    iget-object v7, v6, Lcom/fyber/inneractive/sdk/flow/q;->c:Lcom/fyber/inneractive/sdk/config/global/s;
+    const-class v8, Lcom/fyber/inneractive/sdk/config/global/features/l;
+    invoke-virtual {v7, v8}, Lcom/fyber/inneractive/sdk/config/global/s;->a(Ljava/lang/Class;)Lcom/fyber/inneractive/sdk/config/global/features/g;
+    move-result-object v7
+    check-cast v7, Lcom/fyber/inneractive/sdk/config/global/features/l;
+    invoke-virtual {v7}, Lcom/fyber/inneractive/sdk/config/global/features/l;->d()Z
+    move-result v7
+    if-eqz v7, :cond_40
+    iget-object v7, v9, Lcom/fyber/inneractive/sdk/player/a;->a:Lcom/fyber/inneractive/sdk/flow/f0;
+    iget-object v7, v7, Lcom/fyber/inneractive/sdk/flow/q;->d:Lcom/fyber/inneractive/sdk/config/b0;
+    check-cast v7, Lcom/fyber/inneractive/sdk/config/a0;
+    iget-object v7, v7, Lcom/fyber/inneractive/sdk/config/a0;->f:Lcom/fyber/inneractive/sdk/config/c0;
+    if-eqz v7, :cond_40
+    iget-object v7, v7, Lcom/fyber/inneractive/sdk/config/c0;->j:Lcom/fyber/inneractive/sdk/config/enums/UnitDisplayType;
+    sget-object v8, Lcom/fyber/inneractive/sdk/config/enums/UnitDisplayType;->INTERSTITIAL:Lcom/fyber/inneractive/sdk/config/enums/UnitDisplayType;
+    if-eq v7, v8, :cond_3c
+    sget-object v8, Lcom/fyber/inneractive/sdk/config/enums/UnitDisplayType;->REWARDED:Lcom/fyber/inneractive/sdk/config/enums/UnitDisplayType;
+    if-ne v7, v8, :cond_40
+
+    :cond_3c
+    sget-object v1, Lcom/fyber/inneractive/sdk/config/IAConfigManager;->M:Lcom/fyber/inneractive/sdk/config/IAConfigManager;
+    iget-object v1, v1, Lcom/fyber/inneractive/sdk/config/IAConfigManager;->J:Lcom/fyber/inneractive/sdk/measurement/a;
+
+    :cond_40
+    move-object v7, v1
+    move-object v1, v0
+    invoke-direct/range {v1 .. v7}, Lcom/fyber/inneractive/sdk/player/e;-><init>(Landroid/content/Context;Lcom/fyber/inneractive/sdk/response/g;Lcom/fyber/inneractive/sdk/config/b0;Lcom/fyber/inneractive/sdk/external/InneractiveAdRequest;Lcom/fyber/inneractive/sdk/flow/f0;Lcom/fyber/inneractive/sdk/measurement/a;)V
+    iput-object v0, v9, Lcom/fyber/inneractive/sdk/player/a;->b:Lcom/fyber/inneractive/sdk/player/a$a;
+
+    :cond_47
+    iget-object v0, v9, Lcom/fyber/inneractive/sdk/player/a;->b:Lcom/fyber/inneractive/sdk/player/a$a;
+    return-object v0
+.end method
+

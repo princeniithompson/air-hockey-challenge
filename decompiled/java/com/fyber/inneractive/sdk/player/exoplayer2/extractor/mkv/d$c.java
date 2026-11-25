@@ -1,0 +1,82 @@
+package com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv;
+
+public final class d$c {
+    public float A;
+    public float B;
+    public float C;
+    public float D;
+    public float E;
+    public float F;
+    public int G;
+    public int H;
+    public int I;
+    public long J;
+    public long K;
+    public boolean L;
+    public boolean M;
+    public String N;
+    public n O;
+    public int P;
+    public String a;
+    public int b;
+    public int c;
+    public int d;
+    public boolean e;
+    public byte[] f;
+    public byte[] g;
+    public byte[] h;
+    public a i;
+    public int j;
+    public int k;
+    public int l;
+    public int m;
+    public int n;
+    public byte[] o;
+    public int p;
+    public boolean q;
+    public int r;
+    public int s;
+    public int t;
+    public int u;
+    public int v;
+    public float w;
+    public float x;
+    public float y;
+    public float z;
+
+    public d$c() {
+        new Object();
+        j = -1;
+        k = -1;
+        l = -1;
+        m = -1;
+        n = 0;
+        o = 0;
+        p = -1;
+        q = 0;
+        r = -1;
+        s = -1;
+        t = -1;
+        u = 1000;
+        v = 200;
+        w = -1.0f;
+        x = -1.0f;
+        y = -1.0f;
+        z = -1.0f;
+        A = -1.0f;
+        B = -1.0f;
+        C = -1.0f;
+        D = -1.0f;
+        E = -1.0f;
+        F = -1.0f;
+        G = 1;
+        H = -1;
+        I = 8000;
+        J = 0L;
+        K = 0L;
+        M = 1;
+        N = "eng";
+        return;
+    }
+
+}

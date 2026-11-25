@@ -1,0 +1,172 @@
+package com.fyber.inneractive.sdk.network;
+
+public final class q extends Enum {
+    private static final q[] $VALUES;
+    public static final q CLICK_PARSING_FAILURE;
+    public static final q DV_ERROR_PHASE;
+    public static final q FAILED_DNS;
+    public static final q FATAL_ADM_MARKUP_FETCHING_ERROR;
+    public static final q FATAL_ADM_PARSING_ERROR;
+    public static final q FATAL_CONFIGURATION_ERROR;
+    public static final q FATAL_FEATURES_CONFIG_ERROR;
+    public static final q FETCH_TOKEN_DV_ERROR;
+    public static final q FMP_COMPANION_FAILED_LOADING;
+    public static final q FMP_SDK_INIT_FAILED;
+    public static final q IA_AD_DESTROYED_WITHOUT_SHOW;
+    public static final q IA_AD_EXPIRED;
+    public static final q IA_AD_LOAD_FAILED;
+    public static final q IGNITE_FLOW_FAILED_TO_INSTALL_APP;
+    public static final q IGNITE_FLOW_FAILED_TO_LOAD_WEBPAGE;
+    public static final q IGNITE_FLOW_FAILED_TO_START;
+    public static final q IGNITE_FLOW_MODE_NOT_COMPATIBLE;
+    public static final q INTERNAL_CONFIG_MISMATCH;
+    public static final q MISSMATCH_SPOTID;
+    public static final q MRAID_AUTO_ACTION_DETECTED;
+    public static final q MRAID_ERROR_UNSECURE_CONTENT;
+    public static final q MRAID_VIDEO_HAS_NOT_STARTED_PLAYING_IN_A_TIMELY_FASHION;
+    public static final q NATIVE_ERROR_FAILED_LOAD_ASSET;
+    public static final q NATIVE_ERROR_INVALID_LINK_WEB_URL;
+    public static final q NATIVE_ERROR_INVALID_NATIVE_RESPONSE;
+    public static final q NATIVE_ERROR_INVALID_OPTIONAL_ASSET_DATA;
+    public static final q NATIVE_ERROR_INVALID_REQUIRED_ASSET_DATA;
+    public static final q NATIVE_ERROR_MISMATCH_OPTIONAL_ASSET_RESPONSE;
+    public static final q NATIVE_ERROR_MISMATCH_REQUIRED_ASSET_RESPONSE;
+    public static final q NATIVE_ERROR_MISSING_PROTOCOL_REQUIRED_FIELD;
+    public static final q NATIVE_ERROR_MISSING_PUB_REQUIRED_FIELD;
+    public static final q NATIVE_ERROR_NO_VALID_URLS_FOR_CLICK;
+    public static final q NATIVE_ERROR_RECEIVED_VIDEO_BUT_NOT_SUPPORTED;
+    public static final q NATIVE_ERROR_SOME_INVALID_URLS_FOR_PROCESSED_CLICK;
+    public static final q TOKEN_EXCEEDS_LIMIT;
+    public static final q VAST_COMPANION_FAILED_LOADING;
+    public static final q VAST_COMPANION_INCOMPATIBLE_MIMETYPE;
+    public static final q VAST_ERROR_BUFFER_TIMEOUT;
+    public static final q VAST_ERROR_FAILED_PLAYING_ALL_MEDIA_FILES;
+    public static final q VAST_ERROR_FAILED_PLAYING_MEDIA_FILE;
+    public static final q VAST_ERROR_INVALID_RESPONSE;
+    public static final q VAST_ERROR_NO_COMPATIBLE_MEDIA_FILE;
+    public static final q VAST_ERROR_NO_MEDIA_FILES;
+    public static final q VAST_ERROR_PRE_BUFFER_TIMEOUT;
+    public static final q VAST_ERROR_TOO_MANY_WRAPPERS;
+    public static final q VAST_ERROR_UNSECURE_URL;
+    public static final q VAST_UNKNOWN_PLAYER_ERROR;
+    public static final q VPAID_ERROR_UNSECURE_CONTENT;
+    public int val;
+
+    public static <clinit>() {
+        new q("FMP_SDK_INIT_FAILED", 0, 62);
+        FMP_SDK_INIT_FAILED = new q(..);
+        new q("VAST_COMPANION_FAILED_LOADING", 1, 70);
+        VAST_COMPANION_FAILED_LOADING = new q(..);
+        new q("VAST_COMPANION_INCOMPATIBLE_MIMETYPE", 2, 75);
+        VAST_COMPANION_INCOMPATIBLE_MIMETYPE = new q(..);
+        new q("FMP_COMPANION_FAILED_LOADING", 3, 78);
+        FMP_COMPANION_FAILED_LOADING = new q(..);
+        new q("VAST_ERROR_INVALID_RESPONSE", 4, 301);
+        VAST_ERROR_INVALID_RESPONSE = new q(..);
+        new q("VAST_ERROR_TOO_MANY_WRAPPERS", 5, 302);
+        VAST_ERROR_TOO_MANY_WRAPPERS = new q(..);
+        new q("VAST_ERROR_NO_MEDIA_FILES", 6, 303);
+        VAST_ERROR_NO_MEDIA_FILES = new q(..);
+        new q("VAST_ERROR_NO_COMPATIBLE_MEDIA_FILE", 7, 304);
+        VAST_ERROR_NO_COMPATIBLE_MEDIA_FILE = new q(..);
+        new q("VAST_ERROR_PRE_BUFFER_TIMEOUT", 8, 306);
+        VAST_ERROR_PRE_BUFFER_TIMEOUT = new q(..);
+        new q("VAST_ERROR_BUFFER_TIMEOUT", 9, 307);
+        VAST_ERROR_BUFFER_TIMEOUT = new q(..);
+        new q("VAST_ERROR_FAILED_PLAYING_MEDIA_FILE", 10, 308);
+        VAST_ERROR_FAILED_PLAYING_MEDIA_FILE = new q(..);
+        new q("VAST_ERROR_FAILED_PLAYING_ALL_MEDIA_FILES", 11, 311);
+        VAST_ERROR_FAILED_PLAYING_ALL_MEDIA_FILES = new q(..);
+        new q("VAST_ERROR_UNSECURE_URL", 12, 312);
+        VAST_ERROR_UNSECURE_URL = new q(..);
+        new q("MRAID_ERROR_UNSECURE_CONTENT", 13, 313);
+        MRAID_ERROR_UNSECURE_CONTENT = new q(..);
+        new q("VPAID_ERROR_UNSECURE_CONTENT", 14, 314);
+        VPAID_ERROR_UNSECURE_CONTENT = new q(..);
+        new q("MRAID_VIDEO_HAS_NOT_STARTED_PLAYING_IN_A_TIMELY_FASHION", 15, 390);
+        MRAID_VIDEO_HAS_NOT_STARTED_PLAYING_IN_A_TIMELY_FASHION = new q(..);
+        new q("VAST_UNKNOWN_PLAYER_ERROR", 16, 399);
+        VAST_UNKNOWN_PLAYER_ERROR = new q(..);
+        new q("NATIVE_ERROR_INVALID_NATIVE_RESPONSE", 17, 401);
+        NATIVE_ERROR_INVALID_NATIVE_RESPONSE = new q(..);
+        new q("NATIVE_ERROR_MISSING_PUB_REQUIRED_FIELD", 18, 402);
+        NATIVE_ERROR_MISSING_PUB_REQUIRED_FIELD = new q(..);
+        new q("NATIVE_ERROR_MISMATCH_REQUIRED_ASSET_RESPONSE", 19, 404);
+        NATIVE_ERROR_MISMATCH_REQUIRED_ASSET_RESPONSE = new q(..);
+        new q("NATIVE_ERROR_INVALID_REQUIRED_ASSET_DATA", 20, 405);
+        NATIVE_ERROR_INVALID_REQUIRED_ASSET_DATA = new q(..);
+        new q("NATIVE_ERROR_INVALID_OPTIONAL_ASSET_DATA", 21, 406);
+        NATIVE_ERROR_INVALID_OPTIONAL_ASSET_DATA = new q(..);
+        new q("NATIVE_ERROR_INVALID_LINK_WEB_URL", 22, 407);
+        NATIVE_ERROR_INVALID_LINK_WEB_URL = new q(..);
+        new q("NATIVE_ERROR_FAILED_LOAD_ASSET", 23, 410);
+        NATIVE_ERROR_FAILED_LOAD_ASSET = new q(..);
+        new q("NATIVE_ERROR_MISMATCH_OPTIONAL_ASSET_RESPONSE", 24, 411);
+        NATIVE_ERROR_MISMATCH_OPTIONAL_ASSET_RESPONSE = new q(..);
+        new q("NATIVE_ERROR_MISSING_PROTOCOL_REQUIRED_FIELD", 25, 412);
+        NATIVE_ERROR_MISSING_PROTOCOL_REQUIRED_FIELD = new q(..);
+        new q("NATIVE_ERROR_RECEIVED_VIDEO_BUT_NOT_SUPPORTED", 26, 413);
+        NATIVE_ERROR_RECEIVED_VIDEO_BUT_NOT_SUPPORTED = new q(..);
+        new q("NATIVE_ERROR_NO_VALID_URLS_FOR_CLICK", 27, 414);
+        NATIVE_ERROR_NO_VALID_URLS_FOR_CLICK = new q(..);
+        new q("NATIVE_ERROR_SOME_INVALID_URLS_FOR_PROCESSED_CLICK", 28, 415);
+        NATIVE_ERROR_SOME_INVALID_URLS_FOR_PROCESSED_CLICK = new q(..);
+        new q("MRAID_AUTO_ACTION_DETECTED", 29, 501);
+        MRAID_AUTO_ACTION_DETECTED = new q(..);
+        new q("INTERNAL_CONFIG_MISMATCH", 30, 601);
+        INTERNAL_CONFIG_MISMATCH = new q(..);
+        new q("FATAL_ADM_PARSING_ERROR", 31, 603);
+        FATAL_ADM_PARSING_ERROR = new q(..);
+        new q("FATAL_ADM_MARKUP_FETCHING_ERROR", 32, 604);
+        FATAL_ADM_MARKUP_FETCHING_ERROR = new q(..);
+        new q("TOKEN_EXCEEDS_LIMIT", 33, 605);
+        TOKEN_EXCEEDS_LIMIT = new q(..);
+        new q("IGNITE_FLOW_MODE_NOT_COMPATIBLE", 34, 606);
+        IGNITE_FLOW_MODE_NOT_COMPATIBLE = new q(..);
+        new q("IGNITE_FLOW_FAILED_TO_START", 35, 607);
+        IGNITE_FLOW_FAILED_TO_START = new q(..);
+        new q("IGNITE_FLOW_FAILED_TO_INSTALL_APP", 36, 612);
+        IGNITE_FLOW_FAILED_TO_INSTALL_APP = new q(..);
+        new q("IGNITE_FLOW_FAILED_TO_LOAD_WEBPAGE", 37, 613);
+        IGNITE_FLOW_FAILED_TO_LOAD_WEBPAGE = new q(..);
+        new q("FATAL_CONFIGURATION_ERROR", 38, 701);
+        FATAL_CONFIGURATION_ERROR = new q(..);
+        new q("FATAL_FEATURES_CONFIG_ERROR", 39, 704);
+        FATAL_FEATURES_CONFIG_ERROR = new q(..);
+        new q("IA_AD_LOAD_FAILED", 40, 801);
+        IA_AD_LOAD_FAILED = new q(..);
+        new q("IA_AD_EXPIRED", 41, 802);
+        IA_AD_EXPIRED = new q(..);
+        new q("IA_AD_DESTROYED_WITHOUT_SHOW", 42, 803);
+        IA_AD_DESTROYED_WITHOUT_SHOW = new q(..);
+        new q("CLICK_PARSING_FAILURE", 43, 991);
+        CLICK_PARSING_FAILURE = new q(..);
+        new q("MISSMATCH_SPOTID", 44, 992);
+        MISSMATCH_SPOTID = new q(..);
+        new q("FAILED_DNS", 45, 995);
+        FAILED_DNS = new q(..);
+        new q("FETCH_TOKEN_DV_ERROR", 46, 1000);
+        FETCH_TOKEN_DV_ERROR = new q(..);
+        new q("DV_ERROR_PHASE", 47, 1001);
+        DV_ERROR_PHASE = new q(..);
+        $VALUES = 48;
+        return;
+    }
+
+    public q(String p0, int p1, int p2) {
+        new Enum(p0, p1);
+        val = p2;
+        return;
+    }
+
+    public static q valueOf(String p0) {
+        Enum.valueOf(q.class, p0);
+        return Enum.valueOf(..);
+    }
+
+    public static q[] values() {
+        q.$VALUES.clone();
+        return q[].clone(..);
+    }
+
+}

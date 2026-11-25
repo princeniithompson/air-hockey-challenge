@@ -1,0 +1,12 @@
+.class public final Lcom/fyber/inneractive/sdk/bidder/TokenParametersOuterClass$TokenParameters$b;
+.super Lcom/fyber/inneractive/sdk/protobuf/GeneratedMessageLite$b;
+
+# methods
+.method public <init>()V
+    .registers 2
+    invoke-static {}, Lcom/fyber/inneractive/sdk/bidder/TokenParametersOuterClass$TokenParameters;->access$7500()Lcom/fyber/inneractive/sdk/bidder/TokenParametersOuterClass$TokenParameters;
+    move-result-object v0
+    invoke-direct {v1, v0}, Lcom/fyber/inneractive/sdk/protobuf/GeneratedMessageLite$b;-><init>(Lcom/fyber/inneractive/sdk/protobuf/GeneratedMessageLite;)V
+    return-void
+.end method
+

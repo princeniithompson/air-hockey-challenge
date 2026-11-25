@@ -1,0 +1,237 @@
+.class public Lcom/fyber/inneractive/sdk/util/IAlog;
+.super Ljava/lang/Object;
+
+# fields
+.field public static a:I = 4
+.field public static final b:Lcom/fyber/inneractive/sdk/logger/a;
+.field public static final c:Ljava/util/List;
+
+# methods
+.method public static <clinit>()V
+    .registers 1
+    new-instance v0, Lcom/fyber/inneractive/sdk/logger/a;
+    invoke-direct {v0}, Lcom/fyber/inneractive/sdk/logger/a;-><init>()V
+    sput-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->b:Lcom/fyber/inneractive/sdk/logger/a;
+    new-instance v0, Lcom/fyber/inneractive/sdk/util/IAlog$a;
+    invoke-direct {v0}, Lcom/fyber/inneractive/sdk/util/IAlog$a;-><init>()V
+    sput-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->c:Ljava/util/List;
+    return-void
+.end method
+
+.method public static a()Lcom/fyber/inneractive/sdk/logger/a;
+    .registers 1
+    sget-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->b:Lcom/fyber/inneractive/sdk/logger/a;
+    return-object v0
+.end method
+
+.method public static a(Ljava/lang/Class;)Ljava/lang/String;
+    .registers 3
+    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v1, "("
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    move-result-object v1
+    invoke-virtual {v1}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "): "
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "["
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+    move-result v2
+    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+    move-result-object v2
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "] "
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+    return-object v2
+.end method
+
+.method public static a(Ljava/lang/Object;)Ljava/lang/String;
+    .registers 3
+    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v1, "("
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    move-result-object v1
+    invoke-virtual {v1}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "): "
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v1
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "["
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+    move-result v2
+    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+    move-result-object v2
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "] "
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+    return-object v2
+.end method
+
+.method public static a(ILjava/lang/Exception;Ljava/lang/String;[Ljava/lang/Object;)V
+    .registers 6
+    sget-object v3, Lcom/fyber/inneractive/sdk/util/IAlog;->c:Ljava/util/List;
+    check-cast v3, Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-virtual {v3}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    move-result-object v3
+
+    :cond_8
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+    move-result v0
+    if-eqz v0, :cond_19
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v0
+    check-cast v0, Lcom/fyber/inneractive/sdk/logger/FMPLogger;
+    const/4 v1, 0x0
+    invoke-virtual {v0, v2, v1, v4, v5}, Lcom/fyber/inneractive/sdk/logger/FMPLogger;->log(ILjava/lang/Exception;Ljava/lang/String;[Ljava/lang/Object;)V
+    goto :goto_8
+
+    :cond_19
+    return-void
+.end method
+
+.method public static a(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
+    .registers 5
+    sget-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->c:Ljava/util/List;
+    check-cast v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    move-result-object v0
+
+    :cond_8
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    move-result v1
+    if-eqz v1, :cond_18
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v1
+    check-cast v1, Lcom/fyber/inneractive/sdk/logger/FMPLogger;
+    invoke-virtual {v1, v2, v3, v4}, Lcom/fyber/inneractive/sdk/logger/FMPLogger;->error(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
+    goto :goto_8
+
+    :cond_18
+    return-void
+.end method
+
+.method public static a(Ljava/lang/String;[Ljava/lang/Object;)V
+    .registers 4
+    sget-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->c:Ljava/util/List;
+    check-cast v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    move-result-object v0
+
+    :cond_8
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    move-result v1
+    if-eqz v1, :cond_18
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v1
+    check-cast v1, Lcom/fyber/inneractive/sdk/logger/FMPLogger;
+    invoke-virtual {v1, v2, v3}, Lcom/fyber/inneractive/sdk/logger/FMPLogger;->debug(Ljava/lang/String;[Ljava/lang/Object;)V
+    goto :goto_8
+
+    :cond_18
+    return-void
+.end method
+
+.method public static b(Ljava/lang/String;[Ljava/lang/Object;)V
+    .registers 5
+    sget-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->c:Ljava/util/List;
+    check-cast v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    move-result-object v0
+
+    :cond_8
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    move-result v1
+    if-eqz v1, :cond_19
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v1
+    check-cast v1, Lcom/fyber/inneractive/sdk/logger/FMPLogger;
+    const/4 v2, 0x0
+    invoke-virtual {v1, v3, v2, v4}, Lcom/fyber/inneractive/sdk/logger/FMPLogger;->error(Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V
+    goto :goto_8
+
+    :cond_19
+    return-void
+.end method
+
+.method public static c(Ljava/lang/String;[Ljava/lang/Object;)V
+    .registers 4
+    sget-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->c:Ljava/util/List;
+    check-cast v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    move-result-object v0
+
+    :cond_8
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    move-result v1
+    if-eqz v1, :cond_18
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v1
+    check-cast v1, Lcom/fyber/inneractive/sdk/logger/FMPLogger;
+    invoke-virtual {v1, v2, v3}, Lcom/fyber/inneractive/sdk/logger/FMPLogger;->info(Ljava/lang/String;[Ljava/lang/Object;)V
+    goto :goto_8
+
+    :cond_18
+    return-void
+.end method
+
+.method public static d(Ljava/lang/String;[Ljava/lang/Object;)V
+    .registers 4
+    sget-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->c:Ljava/util/List;
+    check-cast v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    move-result-object v0
+
+    :cond_8
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    move-result v1
+    if-eqz v1, :cond_18
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v1
+    check-cast v1, Lcom/fyber/inneractive/sdk/logger/FMPLogger;
+    invoke-virtual {v1, v2, v3}, Lcom/fyber/inneractive/sdk/logger/FMPLogger;->verbose(Ljava/lang/String;[Ljava/lang/Object;)V
+    goto :goto_8
+
+    :cond_18
+    return-void
+.end method
+
+.method public static e(Ljava/lang/String;[Ljava/lang/Object;)V
+    .registers 4
+    sget-object v0, Lcom/fyber/inneractive/sdk/util/IAlog;->c:Ljava/util/List;
+    check-cast v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    move-result-object v0
+
+    :cond_8
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    move-result v1
+    if-eqz v1, :cond_18
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v1
+    check-cast v1, Lcom/fyber/inneractive/sdk/logger/FMPLogger;
+    invoke-virtual {v1, v2, v3}, Lcom/fyber/inneractive/sdk/logger/FMPLogger;->warning(Ljava/lang/String;[Ljava/lang/Object;)V
+    goto :goto_8
+
+    :cond_18
+    return-void
+.end method
+

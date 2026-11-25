@@ -1,0 +1,26 @@
+.class public Lcom/fyber/inneractive/sdk/web/c0$d;
+.super Ljava/lang/Object;
+
+# fields
+.field public final a:Lcom/fyber/inneractive/sdk/web/c0;
+
+# methods
+.method public <init>(Lcom/fyber/inneractive/sdk/web/c0;)V
+    .registers 2
+    iput-object v1, v0, Lcom/fyber/inneractive/sdk/web/c0$d;->a:Lcom/fyber/inneractive/sdk/web/c0;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    return-void
+.end method
+
+.method public run()V
+    .registers 3
+    iget-object v0, v2, Lcom/fyber/inneractive/sdk/web/c0$d;->a:Lcom/fyber/inneractive/sdk/web/c0;
+    iget-object v0, v0, Lcom/fyber/inneractive/sdk/web/d;->b:Lcom/fyber/inneractive/sdk/web/g;
+    if-eqz v0, :cond_b
+    const-string v1, "if (FyberMraidVideoController.getCurrentTime() < 0.2) { var ifr = document.createElement('iframe'); var container = document.body || document.documentElement; container.appendChild(ifr); ifr.setAttribute('sandbox', ''); ifr.setAttribute('style', 'position: fixed; bottom: -20px; border: none; visibility: hidden; height: 20px; z-index: -99999'); ifr.setAttribute('src','FyMraidVideo://fyMraidVideoAdPlaybackFailure'); console.log('dispatched closure event'); } else { console.log('video has progressed'); };"
+    invoke-virtual {v0, v1}, Lcom/fyber/inneractive/sdk/web/g;->a(Ljava/lang/String;)V
+
+    :cond_b
+    return-void
+.end method
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="0"
+  android:layout_width="-1"
+  android:layout_height="-2"
+  android:minHeight="48dp"
+  android:paddingStart="15dp"
+  android:paddingEnd="15dp">
+  <TextView
+    android:textSize="15sp"
+    android:textColor="@color/browser_actions_text_color"
+    android:layout_gravity="0x10"
+    android:id="@id/browser_actions_menu_item_text"
+    android:layout_width="0dp"
+    android:layout_height="-2"
+    android:layout_marginLeft="10dp"
+    android:layout_weight="1.0"
+    android:layout_marginStart="10dp">
+  </TextView>
+  <ImageView
+    android:id="@id/browser_actions_menu_item_icon"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="20dp"
+    android:layout_height="-1"
+    android:scaleType="7"
+    android:contentDescription="@0x00000000">
+  </ImageView>
+</LinearLayout>

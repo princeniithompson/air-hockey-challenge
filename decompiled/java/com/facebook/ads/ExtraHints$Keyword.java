@@ -1,0 +1,178 @@
+package com.facebook.ads;
+
+public final class ExtraHints$Keyword extends Enum {
+    private static final ExtraHints$Keyword[] $VALUES;
+    public static final ExtraHints$Keyword ACCESSORIES;
+    public static final ExtraHints$Keyword ART_HISTORY;
+    public static final ExtraHints$Keyword AUTOMOTIVE;
+    public static final ExtraHints$Keyword BEAUTY;
+    public static final ExtraHints$Keyword BIOLOGY;
+    public static final ExtraHints$Keyword BOARD_GAMES;
+    public static final ExtraHints$Keyword BUSINESS_SOFTWARE;
+    public static final ExtraHints$Keyword BUYING_SELLING_HOMES;
+    public static final ExtraHints$Keyword CATS;
+    public static final ExtraHints$Keyword CELEBRITIES;
+    public static final ExtraHints$Keyword CLOTHING;
+    public static final ExtraHints$Keyword COMIC_BOOKS;
+    public static final ExtraHints$Keyword DESKTOP_VIDEO;
+    public static final ExtraHints$Keyword DOGS;
+    public static final ExtraHints$Keyword EDUCATION;
+    public static final ExtraHints$Keyword EMAIL;
+    public static final ExtraHints$Keyword ENTERTAINMENT;
+    public static final ExtraHints$Keyword FAMILY_PARENTING;
+    public static final ExtraHints$Keyword FASHION;
+    public static final ExtraHints$Keyword FINE_ART;
+    public static final ExtraHints$Keyword FOOD_DRINK;
+    public static final ExtraHints$Keyword FRENCH_CUISINE;
+    public static final ExtraHints$Keyword GOVERNMENT;
+    public static final ExtraHints$Keyword HEALTH_FITNESS;
+    public static final ExtraHints$Keyword HOBBIES;
+    public static final ExtraHints$Keyword HOME_GARDEN;
+    public static final ExtraHints$Keyword HUMOR;
+    public static final ExtraHints$Keyword INTERNET_TECHNOLOGY;
+    public static final ExtraHints$Keyword LARGE_ANIMALS;
+    public static final ExtraHints$Keyword LAW;
+    public static final ExtraHints$Keyword LEGAL_ISSUES;
+    public static final ExtraHints$Keyword LITERATURE;
+    public static final ExtraHints$Keyword MARKETING;
+    public static final ExtraHints$Keyword MOVIES;
+    public static final ExtraHints$Keyword MUSIC;
+    public static final ExtraHints$Keyword NEWS;
+    public static final ExtraHints$Keyword PERSONAL_FINANCE;
+    public static final ExtraHints$Keyword PETS;
+    public static final ExtraHints$Keyword PHOTOGRAPHY;
+    public static final ExtraHints$Keyword POLITICS;
+    public static final ExtraHints$Keyword REAL_ESTATE;
+    public static final ExtraHints$Keyword ROLEPLAYING_GAMES;
+    public static final ExtraHints$Keyword SCIENCE;
+    public static final ExtraHints$Keyword SHOPPING;
+    public static final ExtraHints$Keyword SOCIETY;
+    public static final ExtraHints$Keyword SPORTS;
+    public static final ExtraHints$Keyword TECHNOLOGY;
+    public static final ExtraHints$Keyword TELEVISION;
+    public static final ExtraHints$Keyword TRAVEL;
+    public static final ExtraHints$Keyword VIDEO_COMPUTER_GAMES;
+    private String mKeyword;
+
+    static <clinit>() {
+        new ExtraHints$Keyword("ACCESSORIES", 0, "accessories");
+        ACCESSORIES = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("ART_HISTORY", 1, "art_history");
+        ART_HISTORY = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("AUTOMOTIVE", 2, "automotive");
+        AUTOMOTIVE = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("BEAUTY", 3, "beauty");
+        BEAUTY = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("BIOLOGY", 4, "biology");
+        BIOLOGY = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("BOARD_GAMES", 5, "board_games");
+        BOARD_GAMES = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("BUSINESS_SOFTWARE", 6, "business_software");
+        BUSINESS_SOFTWARE = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("BUYING_SELLING_HOMES", 7, "buying_selling_homes");
+        BUYING_SELLING_HOMES = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("CATS", 8, "cats");
+        CATS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("CELEBRITIES", 9, "celebrities");
+        CELEBRITIES = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("CLOTHING", 10, "clothing");
+        CLOTHING = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("COMIC_BOOKS", 11, "comic_books");
+        COMIC_BOOKS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("DESKTOP_VIDEO", 12, "desktop_video");
+        DESKTOP_VIDEO = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("DOGS", 13, "dogs");
+        DOGS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("EDUCATION", 14, "education");
+        EDUCATION = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("EMAIL", 15, "email");
+        EMAIL = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("ENTERTAINMENT", 16, "entertainment");
+        ENTERTAINMENT = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("FAMILY_PARENTING", 17, "family_parenting");
+        FAMILY_PARENTING = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("FASHION", 18, "fashion");
+        FASHION = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("FINE_ART", 19, "fine_art");
+        FINE_ART = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("FOOD_DRINK", 20, "food_drink");
+        FOOD_DRINK = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("FRENCH_CUISINE", 21, "french_cuisine");
+        FRENCH_CUISINE = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("GOVERNMENT", 22, "government");
+        GOVERNMENT = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("HEALTH_FITNESS", 23, "health_fitness");
+        HEALTH_FITNESS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("HOBBIES", 24, "hobbies");
+        HOBBIES = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("HOME_GARDEN", 25, "home_garden");
+        HOME_GARDEN = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("HUMOR", 26, "humor");
+        HUMOR = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("INTERNET_TECHNOLOGY", 27, "internet_technology");
+        INTERNET_TECHNOLOGY = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("LARGE_ANIMALS", 28, "large_animals");
+        LARGE_ANIMALS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("LAW", 29, "law");
+        LAW = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("LEGAL_ISSUES", 30, "legal_issues");
+        LEGAL_ISSUES = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("LITERATURE", 31, "literature");
+        LITERATURE = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("MARKETING", 32, "marketing");
+        MARKETING = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("MOVIES", 33, "movies");
+        MOVIES = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("MUSIC", 34, "music");
+        MUSIC = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("NEWS", 35, "news");
+        NEWS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("PERSONAL_FINANCE", 36, "personal_finance");
+        PERSONAL_FINANCE = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("PETS", 37, "pets");
+        PETS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("PHOTOGRAPHY", 38, "photography");
+        PHOTOGRAPHY = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("POLITICS", 39, "politics");
+        POLITICS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("REAL_ESTATE", 40, "real_estate");
+        REAL_ESTATE = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("ROLEPLAYING_GAMES", 41, "roleplaying_games");
+        ROLEPLAYING_GAMES = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("SCIENCE", 42, "science");
+        SCIENCE = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("SHOPPING", 43, "shopping");
+        SHOPPING = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("SOCIETY", 44, "society");
+        SOCIETY = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("SPORTS", 45, "sports");
+        SPORTS = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("TECHNOLOGY", 46, "technology");
+        TECHNOLOGY = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("TELEVISION", 47, "television");
+        TELEVISION = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("TRAVEL", 48, "travel");
+        TRAVEL = new ExtraHints$Keyword(..);
+        new ExtraHints$Keyword("VIDEO_COMPUTER_GAMES", 49, "video_computer_games");
+        VIDEO_COMPUTER_GAMES = new ExtraHints$Keyword(..);
+        $VALUES = 50;
+        return;
+    }
+
+    private ExtraHints$Keyword(String p0, int p1, String p2) {
+        new Enum(p0, p1);
+        mKeyword = p2;
+        return;
+    }
+
+    public static ExtraHints$Keyword valueOf(String p0) {
+        Enum.valueOf(ExtraHints$Keyword.class, p0);
+        return Enum.valueOf(..);
+    }
+
+    public static ExtraHints$Keyword[] values() {
+        ExtraHints$Keyword.$VALUES.clone();
+        return ExtraHints$Keyword[].clone(..);
+    }
+
+}
